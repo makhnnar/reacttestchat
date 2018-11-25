@@ -22,13 +22,18 @@ class Main extends Component {
         
           {this.state.socket&&
 
-            <header className="App-header">
+            <div className="AppContent">
 
-              <AreaChat socket={this.state.socket}/>
-              <AreaInputs socket={this.state.socket}/>
+              <div className="ChatArea">
+                <AreaChat socket={this.state.socket}/>
+              </div>
 
-            </header>
-            
+              <div className="InputArea">
+                <AreaInputs socket={this.state.socket}/>
+              </div>
+              
+            </div>
+
           }
           
       </div>

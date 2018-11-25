@@ -8,21 +8,33 @@ class AreaChat extends Component {
   constructor(props){
     super(props);
     this.state = {
-      msgs:[{
-        name:'Pedro',
-        time:'10:20',
-        msg:'Este es un mensaje de Pedro'
-      },
-      {
-        name:'Ari',
-        time:'10:21',
-        msg:'Este es un mensaje de Ari'
-      },
-      {
-        name:'Ari',
-        time:'10:22',
-        msg:'Este es otro mensaje de Ari'
-      },]
+      msgs:[
+        {
+          name:'Pedro',
+          time:'10:20',
+          msg:'Este es un mensaje de Pedro'
+        },
+        {
+          name:'Ari',
+          time:'10:21',
+          msg:'Este es un mensaje de Ari'
+        },
+        {
+          name:'Ari',
+          time:'10:22',
+          msg:'Este es otro mensaje de Ari'
+        },
+        {
+          name:'Ari',
+          time:'10:22',
+          msg:'Este es otro mensaje de Ari'
+        },
+        {
+          name:'Ari',
+          time:'10:22',
+          msg:'Este es otro mensaje de Ari'
+        }
+      ]
     };
   }
 
