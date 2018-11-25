@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import './AreaInputs.css';
 
 class AreaInputs extends Component {
+
+
+  enviar = (textoMsg) =>{
+    this.props.socket.emit('enviarServer',textoMsg);
+  }
+
   render() {
     return (
       <div className="ContainerInputs">
@@ -10,6 +16,7 @@ class AreaInputs extends Component {
       </div>
     );
   }
+
 }
 
 export default AreaInputs;
