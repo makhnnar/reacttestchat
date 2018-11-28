@@ -9,7 +9,7 @@
 .scroller {
   display: flex;
   overflow: auto;
-  max-height: 90vh;
+  max-height: 88vh;
   flex: 1;
   flex-direction: column;
   scroll-behavior: auto;

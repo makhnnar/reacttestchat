@@ -10,26 +10,31 @@ class AreaChat extends Component {
     this.state = {
       msgs:[
         {
+          id:'1',
           name:'Pedro',
           time:'10:20',
-          msg:'Este es un mensaje de Pedro'
+          msg:'Este es un mensaje de Pedro para Ari'
         },
         {
+          id:'2',
           name:'Ari',
           time:'10:21',
-          msg:'Este es un mensaje de Ari'
+          msg:'Este es un mensaje de Ari muy largo, para probar la responsividad del componente, a la hora de adaptarse a tamaños variables, segun la longitud de los caracteres presentes en el contenido a mostrar'
         },
         {
+          id:'1',
+          name:'Pedro',
+          time:'10:22',
+          msg:'Este es otro mensaje de Pedro'
+        },
+        {
+          id:'2',
           name:'Ari',
           time:'10:22',
           msg:'Este es otro mensaje de Ari'
         },
         {
-          name:'Ari',
-          time:'10:22',
-          msg:'Este es otro mensaje de Ari'
-        },
-        {
+          id:'2',
           name:'Ari',
           time:'10:22',
           msg:'Este es otro mensaje de Ari'
@@ -48,15 +53,25 @@ class AreaChat extends Component {
     return (
       <div className="ContainerAreaChat">
         <div className="scroller">
-            {this.state.msgs.map(({ name, time, msg }) => {
+            {this.state.msgs.map(({ id,name, time, msg }) => {
               return (
                   <div className="item">
-                    <MsgItem 
-                      senderMsg={name}
-                      timeMsg={time}
-                      contentMsg={msg}
-                      bgColor={'#90caf9'}
-                    />
+                    {id==='1'&&
+                      <MsgItem 
+                        senderMsg={name}
+                        timeMsg={time}
+                        contentMsg={msg}
+                        bgColor={'#90caf9'}
+                      />
+                    }
+                    {id!=='1'&&
+                      <MsgItem 
+                        senderMsg={name}
+                        timeMsg={time}
+                        contentMsg={msg}
+                        bgColor={'#ce93d8'}
+                      />
+                    }
                   </div>
               );
             })}

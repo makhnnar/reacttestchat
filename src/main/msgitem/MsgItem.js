@@ -8,7 +8,7 @@ class MsgItem extends Component {
     return (
       <div 
         className="Container" 
-        style={{
+        style={{ 
           backgroundColor:bgColor
         }}
       >

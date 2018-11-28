@@ -5,12 +5,12 @@
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
-  flex-grow: 1;
+  max-width: max-content;
+  max-height: max-content;
 }
 
 .Sender{
   display: flex;
-  flex-grow: 1;
   flex-direction: row;
   align-self: flex-start;
 }
@@ -27,7 +27,6 @@
 }
 
 .ContentMsg{
-  flex-grow: 2;
   align-self: flex-start;
   font-size: calc(10px + 2vmin);
   color: #000000;
